@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ill"
+    tools:context=".FacebookFileActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="300dp"
+
+        android:layout_height="650dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bbq"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="100dp"
+                android:textAllCaps="true"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Facebook "
+                android:textColor="#4d4dff"
+                android:textSize="15sp" />
+
+
+
+            <ImageView
+                android:layout_marginTop="100dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+
+                android:id="@+id/imagee"
+                />
+
+
+            <TextView
+                android:id="@+id/myyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="450dp"
+
+                />
+
+            <TextView
+                android:id="@+id/mmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="500dp"/>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/clickbutton"
+                android:layout_marginTop="550dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:layout_marginBottom="5dp"
+                android:background="#3B5998"
+                android:drawableLeft="@color/white"
+                android:paddingLeft="10dp"
+                android:textColor="#FFFFFF"
+
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

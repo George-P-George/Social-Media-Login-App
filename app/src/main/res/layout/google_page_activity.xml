@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleFileActivity"
+    android:background="@drawable/ill">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="320dp"
+        android:layout_height="650dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:background="@drawable/bbq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Google "
+                android:textColor=" #ff1a1a"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@+id/tv_title"
+                    android:id="@+id/google"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+
+
+                    android:background="@color/white"
+                    android:layout_centerHorizontal="true" />
+
+
+
+                <TextView
+                    android:id="@+id/myname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/google"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="NAME"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/mailid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="EMAIL"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/out"
+
+                    android:backgroundTint=" #ff1a1a"
+                    android:text="Logout"
+
+                    android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
